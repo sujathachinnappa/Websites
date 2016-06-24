@@ -1,0 +1,71 @@
+body {
+	background-color: white;
+	color: blue;
+	font-family: "Arial";
+	font-size: 24px;
+	}
+	h1 {
+	color: Black;
+	font-family: "Arial";
+	font-size: 20px;
+	}
+	h2 {
+	color: red;
+     	font-size: 18px;
+	}
+	h3 {
+	color: black;
+     	font-size: 14px;
+     	font-weight: normal;
+	}
+	p {
+	color: black;
+	font-size: 14px;
+	}
+	td{ 
+	border: 1px solid gray; 
+	}
+	ul, ol {
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	}
+#overlay {
+			visibility: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: 100;
+        }
+#popup {
+	visibility: hidden;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	width: 700px;
+	height: 600px;
+	margin-left: -350px; /*Half the value of width to center div*/
+	margin-top: -300px; /*Half the value of height to center div*/
+	z-index: 200;
+}
+#popupclose {
+	visibility: hidden;
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+}
+#tblContent{
+	text-indent:5px;
+	text-align: left;
+}
+#refLinks td{
+	border: none;
+	text-align:left;
+	text-indent:50px;
+}

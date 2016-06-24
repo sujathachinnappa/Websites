@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Data Science Hub</title>
+	<link rel="stylesheet" type="text/css" href="DataScience.css">
+	<script src="PopUp.js"></script>
+</head>
+	
+<body>
+	<h1>Data Science Hub</h1>
+	<!-- 270 244
+277 96
+411 166
+367 321
+252 396
+113 316
+121 149
+-->
+
+	<table>
+		<tr>
+            <th colSpan="2">
+                <h1 ></h1>
+            </th>
+        </tr>
+		<tr>
+			<td colSpan="1">
+				<img src="file:///Users/sujatha/Documents/SMUDataScience/HTML/DataScience.jpg" alt="Page of Buttons"usemap="#buttonsMap" width="505" height="475"> 
+				
+				<!--<img src="DataScience.jpg" alt="Page of Buttons"usemap="#buttonsMap" width="505" height="475"> -->
+				<map name="buttonsMap">
+				<!-- <area shape="circle" coords="270, 244, 50" alt="Clickable Button" href="http://bit.ly/1kyiNBw"> -->
+				<area shape="circle" coords="270, 244, 50" alt="Clickable Button" onclick="fillContent('DataScience'); popUpOpen(); ">
+				
+				<!-- <area shape="circle" coords="277, 96, 50" alt="Clickable Button" href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html"> -->
+				<area shape="circle" coords="277, 96, 50" alt="Clickable Button" onclick="fillContent('MLib'); popUpOpen();" >
+			
+				<area shape="circle" coords="411, 166, 50" alt="Clickable Button" href="http://www.kdnuggets.com/polls/2014/languages-analytics-data-mining-data-science.html">
+
+				<!--<area shape="circle" coords="367, 321, 50" alt="Clickable Button" href="http://bit.ly/1kyiNBw"> -->
+				<area shape="circle" coords="367, 321, 50" alt="Clickable Button" onclick="fillContent('other'); popUpOpen();" >
+
+				<!--area shape="circle" coords="252, 396, 50" alt="Clickable Button" href="http://bit.ly/1kyiNBw" > -->
+				<area shape="circle" coords="252, 396, 50" alt="Clickable Button" onclick="fillContent('Tools'); popUpOpen(); ">
+				
+				<area shape="circle" coords="113, 316, 50" alt="Clickable Button" href="http://matplotlib.org/">
+				<area shape="circle" coords="129, 149, 50" alt="Clickable Button" href="http://www.statsci.org/teaching.html">
+				</map>
+			</td>
+			<td colSpan="1">
+                <p><b> Welcome to the Data Science Portal </b> <br> <br>
+
+                Data science is a carefully architected inter-disciplinary field which requires combination of statistics, machine learning, data engineering and domain skills to explore what is possible with the data and to answer a business questions of interest. 
+                <br>  
+                <br><br>
+                Please select the topic of interest to learn more...
+
+                </p>
+		</tr>
+	</table>
+	<div id="overlay"></div>
+	<div id="popup">
+		<span id="popupclose" onclick=popUpClose()>X</span>
+    <div class="popupcontent">
+		<table id="tblContent">
+		<thead>
+			<tr>
+				<th><h1>References</h1></th>
+			</tr>
+		</thead>
+		<tbody id="refLinks">			
+			<tr>
+				<td>abc</td>	
+			</tr>
+		</tbody>
+	</div>
+
+</body>
+</html>
